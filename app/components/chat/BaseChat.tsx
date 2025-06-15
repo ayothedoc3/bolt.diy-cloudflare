@@ -9,7 +9,7 @@ import { Menu } from '~/components/sidebar/Menu.client.tsx';
 import { Workbench } from '~/components/workbench/Workbench.client.tsx';
 import { classNames } from '~/utils/classNames';
 import { PROVIDER_LIST } from '~/utils/constants';
-import { Messages } from './Messages.client';
+import { Messages } from './Messages.client.tsx';
 import { getApiKeysFromCookies } from './APIKeyManager';
 import Cookies from 'js-cookie';
 import * as Tooltip from '@radix-ui/react-tooltip';
@@ -30,7 +30,7 @@ import { SupabaseChatAlert } from '~/components/chat/SupabaseAlert';
 import { expoUrlAtom } from '~/lib/stores/qrCodeStore';
 import { useStore } from '@nanostores/react';
 import { StickToBottom, useStickToBottomContext } from '~/lib/hooks';
-import { ChatBox } from './ChatBox';
+import { ChatBox } from './ChatBox.tsx';
 import type { DesignScheme } from '~/types/design-scheme';
 import type { ElementInfo } from '~/components/workbench/Inspector';
 

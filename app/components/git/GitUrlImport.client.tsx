@@ -3,7 +3,7 @@ import { generateId, type Message } from 'ai';
 import ignore from 'ignore';
 import { useEffect, useState } from 'react';
 import { ClientOnly } from 'remix-utils/client-only';
-import { BaseChat } from '~/components/chat/BaseChat';
+import { BaseChat } from '~/components/chat/BaseChat.tsx';
 import { Chat } from '~/components/chat/Chat.client.tsx';
 import { useGit } from '~/lib/hooks/useGit';
 import { useChatHistory } from '~/lib/persistence';
