@@ -86,6 +86,7 @@ import { logStore } from './lib/stores/logs';
 export default function App() {
   const theme = useStore(themeStore);
 
+  // Trigger rebuild with memory optimization
   useEffect(() => {
     logStore.logSystem('Application initialized', {
       theme,
