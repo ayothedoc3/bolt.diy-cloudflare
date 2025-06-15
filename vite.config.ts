@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite';
 import { vitePlugin as remix } from "@remix-run/dev";
 import UnoCSS from 'unocss/vite'
+import path from 'path';
+import { fileURLToPath, URL } from 'url';
 
 export default defineConfig({
   plugins: [
@@ -51,7 +53,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "~": "/workspaces/bolt.diy-cloudflare/app",
+      "~": path.resolve(path.dirname(fileURLToPath(import.meta.url)), "./app"),
     },
   },
 });
