@@ -6,10 +6,10 @@ import { workbenchStore } from '~/lib/stores/workbench';
 import { streamingState } from '~/lib/stores/streaming';
 import { classNames } from '~/utils/classNames';
 import { useState } from 'react';
-import { NetlifyDeploymentLink } from '~/components/chat/NetlifyDeploymentLink.client';
-import { VercelDeploymentLink } from '~/components/chat/VercelDeploymentLink.client';
-import { useVercelDeploy } from '~/components/deploy/VercelDeploy.client';
-import { useNetlifyDeploy } from '~/components/deploy/NetlifyDeploy.client';
+import { NetlifyDeploymentLink } from '~/components/chat/NetlifyDeploymentLink.client.tsx';
+import { VercelDeploymentLink } from '~/components/chat/VercelDeploymentLink.client.tsx';
+import { useVercelDeploy } from '~/components/deploy/VercelDeploy.client.tsx';
+import { useNetlifyDeploy } from '~/components/deploy/NetlifyDeploy.client.tsx';
 
 interface DeployButtonProps {
   onVercelDeploy?: () => Promise<void>;
